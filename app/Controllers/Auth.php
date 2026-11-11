@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Libraries\OAuthClient;
 use App\Libraries\SAMLClient;
 use App\Models\UserModel;
-use Config\Auth;
+use Config\Auth as AuthConfig;
 
 class Auth extends BaseController
 {
@@ -25,7 +25,7 @@ class Auth extends BaseController
         if (session()->get('is_logged_in')) {
             return redirect()->to('/user/profile');
         }
-        $authConfig = config(Auth::class);
+        $authConfig = config(AuthConfig::class);
         return view('auth/login', [
             'title' => lang('Auth.login'),
             'oauthProviders' => array_keys($authConfig->oauthProviders),

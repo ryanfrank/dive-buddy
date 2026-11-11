@@ -4,11 +4,10 @@ namespace App\Libraries;
 
 use OneLogin\Saml2\Auth;
 use OneLogin\Saml2\Settings;
-use Config\Auth;
 
 class SAMLClient
 {
-    protected array $config;
+    protected $config;
 
     public function __construct()
     {
