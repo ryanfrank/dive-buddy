@@ -1,7 +1,6 @@
 # Dive Buddy - Git Ignore
 
 # Environment
-.env
 .env.development
 .env.production
 .env.testing
