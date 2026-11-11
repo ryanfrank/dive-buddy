@@ -1,0 +1,38 @@
+# Dive Buddy - Git Ignore
+
+# Environment
+.env
+.env.development
+.env.production
+.env.testing
+
+# CodeIgniter writable
+writable/logs/*
+writable/cache/*
+writable/session/*
+writable/uploads/*
+!writable/logs/.gitignore
+!writable/cache/.gitignore
+!writable/session/.gitignore
+!writable/uploads/.gitignore
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Composer
+vendor/
+composer.lock
+
+# Tests
+tests/_*/*
+
+# Logs
+*.log
