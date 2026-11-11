@@ -11,10 +11,12 @@ writable/logs/*
 writable/cache/*
 writable/session/*
 writable/uploads/*
+writable/debugbar/*
 !writable/logs/.gitignore
 !writable/cache/.gitignore
 !writable/session/.gitignore
 !writable/uploads/.gitignore
+!writable/debugbar/.gitignore
 
 # IDE
 .idea/

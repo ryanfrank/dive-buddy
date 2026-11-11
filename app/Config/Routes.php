@@ -8,7 +8,7 @@ use CodeIgniter\Config\Routing\RouteCollection;
  * Dive Buddy - Route Configuration
  * Strict MVC: all requests routed to Controllers.
  */
-$routes = services('routes');
+/** @var RouteCollection $routes */
 
 /* --------------------------------------------------------------------------
    Public routes

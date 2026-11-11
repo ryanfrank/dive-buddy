@@ -2,9 +2,9 @@
 
 namespace Config;
 
-use CodeIgniter\Config\Config;
+use CodeIgniter\Config\BaseConfig;
 
-class Filters extends Config
+class Filters extends BaseConfig
 {
     public array $aliases = [
         'csrf'    => \CodeIgniter\Filters\CSRF::class,

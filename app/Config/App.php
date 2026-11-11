@@ -2,16 +2,26 @@
 
 namespace Config;
 
-use CodeIgniter\Config\Config;
+use CodeIgniter\Config\BaseConfig;
 
-class App extends Config
+class App extends BaseConfig
 {
     public string $siteName = 'Dive Buddy';
     public string $siteEmail = 'admin@divebuddy.com';
     public string $siteDescription = 'Connect with divers worldwide. Log dives, find partners, rate experiences.';
+    public string $baseURL = 'http://localhost:8080/';
+    public string $uriProtocol = 'REQUEST_URI';
+    public string $indexPage = '';
+    public string $permittedURIChars = 'a-z 0-9~%.:_\\-';
     public array $supportedLocales = ['en', 'es', 'fr', 'de'];
     public string $defaultLocale = 'en';
     public bool $negotiateLocale = true;
+    public bool $strictLocaleNegotiation = false;
+    public array $allowedHostnames = [];
+    public string $charset = 'UTF-8';
+    public bool $forceGlobalSecureRequests = false;
+    public bool $CSPEnabled = false;
+    public string $appTimezone = 'UTC';
 
     public string $sessionDriver = 'CodeIgniter\\Session\\Handlers\\DatabaseHandler';
     public string $sessionCookieName = 'dive_buddy_session';

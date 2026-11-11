@@ -2,9 +2,9 @@
 
 namespace Config;
 
-use CodeIgniter\Config\Config;
+use CodeIgniter\Config\BaseConfig;
 
-class Auth extends Config
+class Auth extends BaseConfig
 {
     // OAuth 2.0 providers (Google, Facebook, etc.)
     public array $oauthProviders = [
